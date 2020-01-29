@@ -87,10 +87,11 @@ The facial expression model is trained on Kaggle dataset [FER2013](https://www.k
 
 - Our model achieved ~99% accuracy on train set and ~75% on validation set after 21 epochs
 - We use [this paper](https://arxiv.org/abs/1612.02903) as benchmark which achieves 75.2% accuracy. 
-- The two tables below show training result on 5 expressions. It shows that face landmarks and histogram of oriented gradients (HOG) only improves the accuracy by 4.5% at best. On the other hand, batch normalization significantly improves the model performance.
+- The two tables below show training result on 5 expressions done by [amineHorseman](https://github.com/amineHorseman/facial-expression-recognition-using-cnn). It shows that face landmarks and histogram of oriented gradients (HOG) only improves the accuracy by 4.5% at best. On the other hand, batch normalization significantly improves the model performance.
 ![](https://i.imgur.com/F5JF0io.png)
 ![](https://i.imgur.com/49AbN0v.png)
--    Using example code we could not extract HOG or face landmarks features
+-    Using example code extract face landmarks using dlib shape predictor model
+-    Example code get hog features using scikit image hog
 -    Model performance:
 ![](https://i.imgur.com/ZBhLEzL.png)
 ![](https://i.imgur.com/gXELMxN.png)
